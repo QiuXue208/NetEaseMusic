@@ -1,0 +1,61 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+*::before,*::after{box-sizing:border-box;}
+@keyframes circle{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+.page{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    background: transparent url('https://p3.music.126.net/WyApFVhp-shjskCZa-0C-w==/109951163449647641.jpg') no-repeat center;
+    background-size:auto;
+    position:relative;
+}
+
+.page > .logo img{
+    position:absolute;
+    top:12px;
+    left:10px;
+    width:100px;
+    height:17px;
+
+}
+.page > .disc-container{
+    position:relative;
+}
+.page > .disc-container .pointer{
+    width:25vw;
+    /*高度自适应*/
+    position:absolute;
+    top:0;
+    left:46vw;
+    z-index:1;
+}
+.page > .disc-container > .disc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:58vw;
+}
+.page > .disc-container .ring,
+.page > .disc-container .light{
+    width:79vw;
+    position: absolute;
+    
+}
+.page > .disc-container .light,
+.page > .disc-container .cover{
+    animation:circle 20s infinite linear;
+}
+.page > .disc-container .cover{
+    position:absolute;
+    width:50vw;
+    border-radius:50%; 
+}
+.page > .disc-container .playBtn{
+    position:absolute;
+    width:15vw;
+}
+.page > .song-description{}
+.page > .links{}
