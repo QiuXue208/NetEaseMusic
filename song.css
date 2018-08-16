@@ -12,13 +12,12 @@
     background-size:cover;
     position:relative;
 }
-
 .page > .logo img{
     position:absolute;
-    top:12px;
-    left:10px;
-    width:100px;
-    height:17px;
+    top:3vw;
+    left:3vw;
+    width:27vw;
+    height:5vw;
 
 }
 .page > .disc-container{
@@ -59,14 +58,14 @@
 }
 .page > .song-description{
     color:#AEABAC;
-    font-size:16px;
+    font-size:4vw;
     text-align: center;
     margin-top:46vw;
     line-height:7vw;
     flex-grow: 1;
 }
 .page > .song-description h2{
-    font-size:18px;
+    font-size:5vw;
     color:#FEFEFE;
     line-height:5vw;
 }
@@ -81,7 +80,7 @@
     overflow:hidden;
 }
 .page > .song-description .chinese{
-    margin-top:-590vw;
+    margin-top:-578vw;
 }
 .page .links{
     display:flex;
@@ -89,13 +88,13 @@
 }
 .page .links a{
     font-size:5vw;
-    letter-spacing:4px;
+    letter-spacing:1vw;
     text-decoration:none;
     width:46vw;
-    padding:7px 0;
-    border-radius:40px;
+    padding:2vw 0;
+    border-radius:11vw;
     text-align:center;
-    margin:10px 0;
+    margin:3vw 0;
 }
 .page .links .open{
     border:1px solid #D33A31;
@@ -103,7 +102,7 @@
     background:transparent;
 }
 .page .links .download{
-    margin-left:12px;
+    margin-left:3vw;
     background:#D33A31;
     border:1px solid #D33A31;
     color:#FEFEFE;

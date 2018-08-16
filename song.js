@@ -42,7 +42,7 @@ let audio = document.createElement('audio')
 audio.src = "http://dl.stream.qqmusic.qq.com/C400003J6uvg1B7fgR.m4a?vkey=55439225F4F5B997AAA8CA2614A2CDA6ED32A6A7D5A08FFB7903D2B7435BE21C2E75A7EF276AD0A86A8D8DE71FA37E124B0B0948DA9D515D&guid=7853527200&uin=0&fromtag=66"
 audio.id = audio
 audio.play()
-$(document).on('click', function () {
+$('.disc').on('click', function () {
     if (audio.paused) {
         audio.play()
         $('.playBtn').remove()
