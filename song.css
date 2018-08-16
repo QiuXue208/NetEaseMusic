@@ -59,3 +59,28 @@
 }
 .page > .song-description{}
 .page > .links{}
+.page > .song-description{
+    color:#AEABAC;
+    font-size:16px;
+    text-align: center;
+    margin-top:46vw;
+    line-height:7vw;
+}
+.page > .song-description h2{
+    font-size:18px;
+    color:#FEFEFE;
+    line-height:5vw;
+}
+.page > .song-description .lines{
+    line-height:12vw;
+}
+.page > .song-description .lines .active{
+    color:#FEFEFE;
+}
+.page > .song-description .lyric{
+    height:28vw;
+    overflow:hidden;
+}
+.page > .song-description .chinese{
+    margin-top:-590vw;
+}
