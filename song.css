@@ -44,8 +44,8 @@
     position: absolute;
     
 }
-.page > .disc-container .light,
-.page > .disc-container .cover{
+.page > .disc-container .light.active,
+.page > .disc-container .cover.active{
     animation:circle 20s infinite linear;
 }
 .page > .disc-container .cover{
@@ -53,7 +53,7 @@
     width:50vw;
     border-radius:50%; 
 }
-.page > .disc-container .playBtn{
+.page > .disc-container .playBtn.active{
     position:absolute;
     width:15vw;
 }
