@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box}
+ul,ol{list-style: none;}
+.clearfix::after{content:'';display:block;clear:both;}
+header.topBar{width:100vw;padding:4.5vw 1.5vw;background:#D43C33;display:flex;flex-wrap: nowrap;justify-content:space-between;align-items: center;}
+header .logo svg{width:40vw;height:6.5vw;}
+header .download{margin-right:1.3vw;}
+header .download a{font-size:4vw;border:1px solid #F2C5C2;padding:1.2vw 2.4vw;border-radius:5.3vw;text-decoration:none;color:white;}
+
+nav.navBar > ul{display:flex;text-align:center;font-size:15px;border-bottom:1px solid #E2E2E2;}
+nav.navBar > ul li{flex:1;}
+nav.navBar > ul li>span{display:inline-block;line-height:40px;position:relative;color:rgb(78, 78, 78);}
+nav.navBar > ul li.active > span{color:#D85049;}
+nav.navBar > ul li.active > span::before{content:'';position:absolute;bottom:0;left:-1.5vw;right:-1.5vw;border-bottom:2px solid#D44037;}
+
