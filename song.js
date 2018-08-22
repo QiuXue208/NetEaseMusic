@@ -1,6 +1,6 @@
 $(function () {
     //获取到歌曲id
-    let id = parseInt(location.search.match(/\bid=([^&]*)/)[1],10)
+    let id = parseInt(location.search.match(/\bid=([^&]*)/)[1], 10)
     //获取对应的url(Ajax)
     $.get('./songs.json').then(function (response) {
         let songs = response
@@ -8,9 +8,14 @@ $(function () {
             s.id === id
             return songs
         })[0]
-        let {url} = song
+        let { url } = song
+        initPlayer.call(undefined, url)
+
+
+    })
+    function initPlayer(url) {
         let audio = document.createElement('audio')
-        audio.src= url
+        audio.src = url
         audio.id = audio
         audio.play()
         $('.disc').on('click', function () {
@@ -29,13 +34,10 @@ $(function () {
                 $('.light').removeClass('running')
                 $('.cover').removeClass('running')
             }
-        
+
         })
-       
-    })
-    $.get('./lyric.json').then(function (object) {
-        //let lyric1 = object.lyric1
-        //let lyric2 = object.lyric2
+    }
+   /* $.get('./lyric.json').then(function (object) {
         let { lyric1, lyric2 } = object
         let array1 = lyric1.split('\n')
         let array2 = lyric2.split('\n')
@@ -68,5 +70,24 @@ $(function () {
             $p.appendTo($lyric.children('.lines').children('.chinese'))
         })
 
-    })
+    })*/
+    $.get('./lyric.json').then(function (object) {
+        let { lyric} = object
+        let array = lyric.split('\n')
+        let regex = /^\[(.+)\](.+)/
+        array = array.map(function (string) {
+            let matches = string.match(regex)
+            if (matches) {
+                return { time: matches[1], words: matches[2] }
+            }
+
+        })
+        let $lyric = $('.lyric')
+        array.map(function (object) {
+            if (!object) { return }
+            let $p = $('<p/>')
+            $p.attr('data-time', object.time).text(object.words)
+            $p.appendTo($lyric.children('.lines'))
+        })
+})
 })

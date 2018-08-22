@@ -1,5 +1,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 *::before,*::after{box-sizing:border-box;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
 @keyframes circle{
     0%{transform:rotate(0deg);}
     100%{transform:rotate(360deg);}
@@ -63,30 +64,32 @@
 }
 .page > .song-description{
     color:#AEABAC;
-    font-size:4vw;
     text-align: center;
     margin-top:46vw;
     line-height:7vw;
     flex-grow: 1;
 }
 .page > .song-description h2{
-    font-size:5vw;
+    font-size:4.8vw;
     color:#FEFEFE;
     line-height:5vw;
 }
 .page > .song-description .lines{
-    line-height:12vw;
+    line-height:6vw;
+    font-size:4.3vw;
+    padding-bottom:1.6vw;
+    margin-top:3vw;
 }
 .page > .song-description .lines .active{
     color:#FEFEFE;
 }
 .page > .song-description .lyric{
-    height:28vw;
+    height:20vw;
     overflow:hidden;
 }
-.page > .song-description .chinese{
+/*.page > .song-description .chinese{
     margin-top:-578vw;
-}
+}*/
 .page .links{
     display:flex;
     justify-content: center;
