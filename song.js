@@ -8,9 +8,9 @@ $(function () {
             s.id === id
             return songs
         })[0]
-        let { url } = song
+        let { url,lyric,album } = song
         initPlayer.call(undefined, url)
-
+        initText.call(undefined,album,lyric)
 
     })
     function initPlayer(url) {
@@ -37,42 +37,11 @@ $(function () {
 
         })
     }
-   /* $.get('./lyric.json').then(function (object) {
-        let { lyric1, lyric2 } = object
-        let array1 = lyric1.split('\n')
-        let array2 = lyric2.split('\n')
-        let regex = /^\[(.+)\](.+)/
-        array1 = array1.map(function (string) {
-            let matches = string.match(regex)
-            if (matches) {
-                return { time: matches[1], words: matches[2] }
-            }
-
-        })
-        array2 = array2.map(function (string) {
-            let matches = string.match(regex)
-            if (matches) {
-                return { time: matches[1], words: matches[2] }
-            }
-
-        })
-        let $lyric = $('.lyric')
-        array1.map(function (object) {
-            if (!object) { return }
-            let $p = $('<p/>')
-            $p.attr('data-time', object.time).text(object.words)
-            $p.appendTo($lyric.children('.lines').children('.english'))
-        })
-        array2.map(function (object) {
-            if (!object) { return }
-            let $p = $('<p/>')
-            $p.attr('data-time', object.time).text(object.words)
-            $p.appendTo($lyric.children('.lines').children('.chinese'))
-        })
-
-    })*/
-    $.get('./lyric.json').then(function (object) {
-        let { lyric} = object
+    function initText(album,lyric){
+        $('.song-description > h2').text(album)
+        parseLyric.call(undefined,lyric)
+    }
+    function parseLyric(lyric) {
         let array = lyric.split('\n')
         let regex = /^\[(.+)\](.+)/
         array = array.map(function (string) {
@@ -80,7 +49,6 @@ $(function () {
             if (matches) {
                 return { time: matches[1], words: matches[2] }
             }
-
         })
         let $lyric = $('.lyric')
         array.map(function (object) {
@@ -89,5 +57,5 @@ $(function () {
             $p.attr('data-time', object.time).text(object.words)
             $p.appendTo($lyric.children('.lines'))
         })
-})
+    }
 })
