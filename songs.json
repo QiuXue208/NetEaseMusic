@@ -4,8 +4,8 @@
         "url":"http://pdrdpai38.bkt.clouddn.com/Alive.mp3",
         "name":"Alive",
         "album":"钱正昊 - MY ART 0.5",
-        "img":"http://pdrdpai38.bkt.clouddn.com/%EF%BD%89.jpg",
-        "background":"http://pdrdpai38.bkt.clouddn.com/%EF%BD%82",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/ai.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/ab",
         "lyric":"[00:00.00] 作曲 : KAIROS-MG\n[00:01.00] 作词 : KAIROS-MG/Jefferson Qian\n[00:03.33]编曲：KAIROS-MG\n[00:11.63]It’s what I said\n[00:13.96]That made you walk away like you did\n[00:18.38]It made my heart shake\n[00:20.40]What you said\n[00:22.73]“Honest I deny it\n[00:25.00]I would never lie to you.”\n[00:28.67]\n[00:29.59]I’ve been holding on\n[00:33.38] Well tonight\n[00:35.93]I’m not holdin back\n[00:38.05]Don’t need you by my side\n[00:41.26]\n[00:42.18]I’m alive\n[00:43.30]I ain’t going back\n[00:46.94]Never back to your side\n[00:50.37]\n[00:50.96]Whoo\n[01:08.97]\n[01:10.76] 我们在LA开着 party\n[01:12.68]不管是在外面还是呆在家里\n[01:14.63]所有人加一起 一共有八十一\n[01:17.15]其他人不搭理\n[01:18.26]性格像达芬奇\n[01:19.43]nobody love me\n[01:20.43]不给你机会\n[01:21.31]只要玩训练营\n[01:22.58]就不打匹配\n[01:23.51]无趣先生小姐\n[01:24.57]请离开几位\n[01:25.64]如果有再不听话\n[01:26.80]赶走了你被 wait\n[01:27.94]\n[01:28.80]And I’ve been holdin on\n[01:32.33]Well tonight\n[01:34.68]I’m not holdin back\n[01:36.83]Don’t need you by my side\n[01:40.18]\n[01:41.45]I’m alive\n[01:43.41]I ain’t going back\n[01:45.55]Never back to your side\n[01:49.30]\n[01:50.52]Not goin back to your side\n[01:52.38]Gotta keep myself alive\n[01:54.53]Do me a favor and say goodbye\n[01:57.61]\n[01:58.93]I don’t need you no more\n[02:00.88]Don’t be slamming on the door\n[02:03.10]Do me a favor and end the war\n[02:06.43]\n[02:08.59]Whatever you wanted\n[02:11.24]That’s what I just can’t give now\n[02:17.08]\n[02:17.41]Just want you to stop it\n[02:21.44]Movin on from all of this strong\n[02:26.76]\n[02:27.14]Well tonight\n[02:29.11]I’m not holdin back\n[02:31.33]Don’t need you by my side\n[02:34.61]\n[02:35.02]I’m alive\n[02:36.92]I ain’t going back\n[02:40.13]Never back to your side\n[02:43.92]\n[02:44.51]Whoo\n[02:45.33]Back to your side\n[03:04.58]\n[03:05.63]总监制：Joe J. Lee “KAIROS”\n[03:06.36]A&R：Bei Zhang\n[03:06.92]制作人：samUIL / Wes Koz / Hobyn \"K.O\" Yi\n[03:07.52]联合指导：KAIROS-MG / 胡继沿\n[03:08.21]所有乐器与制作：Joe J. Lee “KAIROS” / Samuel J Lee / Wes Kosakowski / Hobyn \"K.O” Yi\n[03:08.82]键盘 & Programming：KAIROS-MG\n[03:09.43]电吉他：Samuel J Lee\n[03:10.01]贝斯：Samuel J Lee\n[03:10.62]鼓：Wes Kosakowski\n[03:11.26]和声：Samuel J Lee\n[03:11.94]录音师：Wes Kosakowski\n[03:12.55]人声制作：Samuel J Lee / Joe J. Lee “KAIROS”\n[03:12.94]录音室：缪思音乐\n[03:13.22]其他录音室：Kairos Music Group LLC, Los Angeles, CA\n[03:13.67]协助工程：Hobyn \"K.O\" Yi at Kairos Music Group LLC, Los Angeles, CA\n[03:13.98]工程助理：Jonathan Andres Larson at Kairos Music Group LLC, Los Angeles, CA\n[03:14.30]混音：Wes Kosakowski at Kairos Music Group LLC, Los Angeles, CA\n[03:14.66]母带：Wes Kosakowski at Kairos Music Group LLC, Los Angeles, CA\n[03:14.80]总策划:甘永恒\n[03:14.90]出品公司:湖南亚歌文化传媒有限公司\n[03:14.99]出品人:甘琼\n"
     },
     {
@@ -19,8 +19,8 @@
     },
     {
         "id":"3",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/aqi.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/aqb",
         "url":"http://pdrdpai38.bkt.clouddn.com/%E7%88%B1%E6%83%85%E5%B0%8F%E4%B8%91.mp3",
         "name":"爱情小丑",
         "album":"廖晶 - 爱情小丑",
@@ -28,17 +28,17 @@
     },
     {
         "id":"4",
-        "img":"",
-        "background":"",
-        "url":"http://pdrdpai38.bkt.clouddn.com/Ocean.mp3",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/oi.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/ob",
+        "url":"http://pdrdpai38.bkt.clouddn.com/ocean.mp3",
         "name":"Ocean (David Guetta Remix)",
         "album":"Martin Garrix / David Guetta / Khalid - Ocean (David Guetta Remix)",
         "lyric":"[00:00.00] 作曲 : Giorgio Tuinfort/Martijn Garritsen/Ilsey Juber/Khalid Robinson/Dewain Whitmore Jr.\n[00:01.00] 作词 : Giorgio Tuinfort/Martijn Garritsen/Ilsey Juber/Khalid Robinson/Dewain Whitmore Jr.\n[00:16.930]Tell me what you're crying for\n[00:20.170]I'll wipe your tears, oh love\n[00:23.760]If your soul is aching love\n[00:26.960]I'll comfort you for sure\n[00:29.750]\n[00:30.640]If we're caught in a wave, I will carry you over\n[00:37.490]It don't matter where you are, I'll run to your front door\n[00:43.710]When my head goes in different directions\n[00:46.860]You know my heart's never on the move\n[00:50.440]And in the dark times you don't have to question\n[00:53.770]If I'm 100 with you\n[00:56.210]\n[00:57.180]You could put an ocean between our love, love, love\n[01:01.940]It won't keep us apart\n[01:04.030]You could build a wall, I would run it up, up, up\n[01:08.820]Just to get to your heart\n[01:11.890]If we're caught in a wave\n[01:15.200]Baby, we'll make a way\n[01:17.790]You could put an ocean between our love, love, love\n[01:22.500]It won't keep us apart\n[01:24.630]\n[01:28.900]Loves, between our love\n[01:35.750]Loves, between our love\n[01:38.170]\n[01:39.230]Shadows play on idle hands\n[01:42.470]I lose myself I do\n[01:45.750]But I'll found my way to velvet sands\n[01:49.340]I'll crash right into you\n[01:52.060]\n[01:52.980]If we're caught in a wave, I will carry you over\n[01:59.810]It don't matter where were we are, you're still the one I choose\n[02:06.010]When my head goes in different directions\n[02:09.150]You know my heart's never on the move\n[02:12.660]And in the hard times you don't have to question\n[02:16.060]If I'm 100 with you\n[02:18.440]\n[02:19.490]You could put an ocean between our love, love, love\n[02:24.200]It won't keep us apart\n[02:26.310]You could build a wall, I would run it up, up, up (run it up)\n[02:31.040]Just to get to your heart\n[02:34.130]If we're caught in a wave (in a wave)\n[02:37.480]Baby, we'll make a way\n[02:40.090]You could put an ocean between our love, love, love\n[02:44.740]It won't keep us apart\n[02:46.800]\n[02:51.240]Loves, between our love\n[02:58.030]Loves, between our love\n[03:00.520]\n[03:00.680]You could put an ocean between our love, love, love\n[03:05.410]It won't keep us apart\n[03:07.470]You could build a wall, I would run it up, up, up (run it up)\n[03:12.170]Just to get to your heart\n[03:15.270]If we're caught in a wave\n[03:18.570]Baby, we'll make a way\n[03:21.220]You could put an ocean between our love, love, love\n[03:25.890]It won't keep us apart\n"
     },
     {
         "id":"5",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/ji.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/jb",
         "url":"http://pdrdpai38.bkt.clouddn.com/%E5%B0%B1%E6%88%91%E4%BF%A9%E8%BF%87%E5%90%A7.mp3",
         "name":"就我俩过吧",
         "album":"宁桓宇 / 魏巡 - 就我俩过吧",
@@ -48,8 +48,8 @@
     },
     {
         "id":"6",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/si.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/sb",
         "url":"http://pdrdpai38.bkt.clouddn.com/%E9%B2%A8%E5%BD%B1.mp3",
         "name":"鲨影(电影《巨齿鲨》宣传曲)",
         "album":"王一博/程潇 - 鲨影",
@@ -58,18 +58,17 @@
     },
     {
         "id":"7",
-        "img":"",
-        "background":"",
-        "url":"http://pdrdpai38.bkt.clouddn.com/Island%20Love.mp3",
-        "name":"Island Love(电影《一出好戏》片尾曲)",
-        "album":"窦靖童 - Island Love",
-        "lyric":"[00:00.00] 作曲 : 窦靖童\n[00:01.00] 作词 : 窦靖童\n[00:08.87]编曲 : 窦靖童 / 王文颖 Leah Dou，Wang Wenying\n[00:10.62]在平行的时间\n[00:21.83]睡梦中游海边\n[00:31.56]我看着你的脸\n[00:43.78]缠绵\n[01:05.33]若 有人告诉我\n[01:13.11]紧握的拳头\n[01:17.85]留不住泡沫\n[01:23.89]游弋在 安静的火海 别燃烧太快 我总会\n[02:18.92]我站在深海里\n[02:23.10]在那望着你\n[02:28.16]虚幻太美丽\n[02:31.97]\n[02:35.61]听潮骚的回音\n[02:43.40]一直在提醒\n[02:48.70]无常中有情\n[03:33.14]Mixing ：Daniel Schlett\n[03:34.62]Mastering ：Alexander Deturk\n[03:38.18]监制 : 窦靖童 /王文颖Leah Dou，Wang Wenying\n[03:39.82]OP：Grey Waters Limited\n[03:41.23]SP：Warner/Chappell Music, H.K. Ltd.\n[03:42.98]经理人公司： Katie Chan Productions Co., Ltd.\n[03:44.70]唱 片 公司： ©2018 Grey Waters Limited\n"
-
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/pi.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/pb",
+        "url":"http://pdrdpai38.bkt.clouddn.com/%E6%B3%A1%E6%B2%AB.mp3",
+        "name":"泡沫",
+        "album":"泡沫-G.E.M.邓紫棋",
+        "lyric":"[00:00.00] 作曲 : G.E.M.\n[00:00.169] 作词 : G.E.M.\n[00:00.509]阳光下的泡沫 是彩色的 就像被骗的我 是幸福的\n[00:14.940]追究什么对错 你的谎言 基于你还爱我\n[00:27.819]美丽的泡沫 虽然一刹花火 你所有承诺 虽然都太脆弱\n[00:41.780]但爱像泡沫 如果能够看破 有什么难过\n[00:53.750]\n[00:57.230]早该知道泡沫 一触就破 就像已伤的心 不胜折磨\n[01:11.040]也不是谁的错 谎言再多 基于你还爱我\n[01:24.200]美丽的泡沫 虽然一刹花火 你所有承诺 虽然都太脆弱\n[01:38.800]爱本是泡沫 如果能够看破 有什么难过\n[01:50.560]\n[01:52.629]再美的花朵 盛开过就凋落 再亮眼的星 一闪过就坠落\n[02:06.650]爱本是泡沫 如果能够看破 有什么难过\n[02:20.889]为什么难过 有什么难过 为什么难过\n[02:41.650]\n[02:45.799]全都是泡沫 只一刹的花火 你所有承诺 全部都太脆弱\n[02:59.560]而你的轮廓 怪我没有看破 才如此难过\n[03:13.769]相爱的把握 要如何再搜索 相拥着寂寞 难道就不寂寞\n[03:28.820]爱本是泡沫 怪我没有看破 才如此难过\n[03:39.980]\n[03:43.829]在雨下的泡沫 一触就破 当初炽热的心 早已沉没\n[03:57.940]说什么你爱我 如果骗我 我宁愿你沉默\n[04:10.000]\n[04:10.209]\n[59:59.700]\n"
     },
     {
         "id":"8",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/hi.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/hb",
         "url":"http://pdrdpai38.bkt.clouddn.com/Hold%20Me%20Down.mp3",
         "name":"Hold Me Down(中文版)",
         "album":"吴亦凡 - Hold Me Down(中文版)",
@@ -78,8 +77,8 @@
     },
     {
         "id":"9",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/wi.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/wb",
         "url":"http://pdrdpai38.bkt.clouddn.com/Whiplash.mp3",
         "name":"Whiplash",
         "album":"R3hab / Kaela Sinclair - Whiplash",
@@ -88,8 +87,8 @@
     },
     {
         "id":"10",
-        "img":"",
-        "background":"",
+        "imgSrc":"http://pdrdpai38.bkt.clouddn.com/di.jpg",
+        "background":"http://pdrdpai38.bkt.clouddn.com/db",
         "url":"http://pdrdpai38.bkt.clouddn.com/%E5%80%92%E6%95%B0.mp3",
         "name":"倒数",
         "album":"G.E.M.邓紫棋 - 倒数",
