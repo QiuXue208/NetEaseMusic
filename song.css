@@ -83,21 +83,21 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;}
     font-size:4.8vw;
     color:#FEFEFE;
     line-height:5vw;
+    margin-bottom:4vw;
 }
 .page > .song-description .lines{  
-    padding-bottom:1.6vw;
-    margin-top:3vw;
     transition:transform 0.3s;
+    height:24vw;
 }
 .page > .song-description p{
-    line-height:6vw;
+    line-height:8vw;
+    height:8vw;
     font-size:4.3vw;
 }
 .page > .song-description p.active{
     color:#FEFEFE;
 }
 .page > .song-description .lyric{
-    height:20vw;
     overflow:hidden;
 }
 .page .links{
