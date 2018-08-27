@@ -76,6 +76,7 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;}
     text-align: center;
     margin-top:46vw;
     line-height:7vw;
+    height:7vw;
     flex-grow: 1;
     z-index:1;
 }
@@ -87,12 +88,13 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;}
 }
 .page > .song-description .lines{  
     transition:transform 0.3s;
-    height:24vw;
+    height:25vw;
+
 }
 .page > .song-description p{
-    line-height:8vw;
-    height:8vw;
     font-size:4.3vw;
+    line-height:8vw;
+    height:8vw; 
 }
 .page > .song-description p.active{
     color:#FEFEFE;
