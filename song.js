@@ -4,15 +4,26 @@ $(function () {
     //获取对应的url(Ajax)
     $.get('./songs.json').then(function (response) {
         let songs = response
-        const song = songs.filter((value) => {
-            if(parseInt(value.id,10) === id){
-                return value
+        let song = songs.filter((song) => {
+            if(parseInt(song.id,10) === id){
+                return song
             } 
         })[0]
-        let { url,lyric,name } = song
+        let { url,lyric,name,imgSrc,background } = song
+        initImages(imgSrc,background)
         initPlayer.call(undefined, url)
         initText(name,lyric)
     })
+    function initImages(imgSrc,background){
+        $('.page').css({
+            'background':`transparent url(${background}) no-repeat center`,
+            'background-size':'cover'
+        })
+        let $img = document.createElement('img')
+        $img.className = "cover running"
+        $img.src = imgSrc
+        $('.disc').append($img)
+    }
     function initPlayer(url) {
         let audio = document.createElement('audio')
         audio.src = url
@@ -46,7 +57,6 @@ $(function () {
                 let currentLineTime =  $lines.eq(i).attr('data-time')
                 let nextLineTime = $lines.eq(i+1).attr('data-time')
                 if($lines.eq(i+1).length !== 0 && currentLineTime <= time && nextLineTime > time){
-                    console.log($lines[i])
                     $whichLine = $lines.eq(i)
                     break
                 }
@@ -58,16 +68,13 @@ $(function () {
                 let delta = top - linesTop - $('.lines').height()/3
                 $('.lines').css('transform',`translateY(-${delta}px)`)
             }
-        },1000)
+        },500)
     }
     function pad(number){
-        return number > 10 ? ' ' + number:'0' + number
+        return number > 10 ? '' + number:'0' + number
     }
     function initText(name,lyric){
         $('.song-description > h2').text(name)
-        initLyric.call(undefined,lyric)
-    }
-    function initLyric(lyric) {
         let array = lyric.split('\n')
         //将每一句的时间和歌词分开
         let regex = /^\[(.+)\](.+)/
