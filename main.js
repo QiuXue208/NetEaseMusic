@@ -1,5 +1,5 @@
 $(function () {
-    $.get('./songs.json', function (response) {
+    $.get('./songs.json', (response)=> {
         let items = response
         items.forEach((i) => {
             let $li = $(`
