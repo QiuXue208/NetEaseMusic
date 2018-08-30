@@ -16,7 +16,7 @@ nav.navBar > ul{display:flex;text-align:center;font-size:4vw;border-bottom:1px s
 nav.navBar > ul > li{flex:1;}
 nav.navBar > ul > li>span{display:inline-block;line-height:10.7vw;position:relative;color:rgb(78, 78, 78);}
 nav.navBar > ul > li.active > span{color:#D85049;}
-nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:0;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
+nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.1vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
 
 section.playLists ul{display:flex;flex-wrap:wrap;justify-content:space-between; margin-top:4vw;}
 section.playLists > ul img{width:100%;}
