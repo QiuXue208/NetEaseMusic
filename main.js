@@ -36,13 +36,21 @@ $(function () {
 
   //当li点击的时候，就触发它的tabChange事件
   $('.navBar').on('tabChange',function(e,index){
+    let $li = $('.tabContent > li').eq(index)
+    //切换tab时，如果已经下载过了，就什么都不做
+    if($li.attr('data-downloaded') === 'yes'){
+      return
+    }
     if(index === 1){
       $.get('./hotSong.json').then((response)=>{
-        console.log(response)
+        //
+        $li.text(response.content)
+        $('.tabContent > li').eq(index).attr('data-downloaded','yes')
       })
     }else if(index === 2){
       $.get('./search.json').then((response)=>{
-        console.log(response)
+        $li.text(response.content)
+        $('.tabContent > li').eq(index).attr('data-downloaded','yes')
       })
     }
   })
