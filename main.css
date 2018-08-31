@@ -2,6 +2,9 @@
 *::before,*::after{box-sizing: border-box}
 ul,ol{list-style: none;}
 a{text-decoration:none;}
+/*解决margin合并*/
+.noCollapse::before{content:'';display:table;}
+.noCollapse::after{content:'';display:table;}
 h1,h2,h3,h4,h5,h6{font-weight:normal;}
 .clearfix::after{content:'';display:block;clear:both;}
 body{color:#333;}
@@ -30,8 +33,6 @@ nav.navBar > ul > li>span{display:inline-block;line-height:10.7vw;position:relat
 nav.navBar > ul > li.active > span{color:#D85049;}
 nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.1vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
 
-/*解决margin合并*/
-section.playLists::before{content:'';display:table;}
 section.playLists ul{display:flex;flex-wrap:wrap;justify-content:space-between; margin-top:4vw;}
 section.playLists > ul img{width:100%;}
 section.playLists > ul > li{width:calc(33.333333% - 1vw);margin-bottom:5vw;}
