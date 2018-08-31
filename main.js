@@ -69,18 +69,23 @@ $(function () {
   let timer = null
   //监听input事件 用户每输入一个字，就发一个请求
   $('#searchSong').on('input', function (e) {
+    $('.cancel').addClass('active')
+    $('.cancel').on('click',function(){
+      $('#searchSong').html('')
+    })
     //清空上次设置的闹钟
     if (timer) {
       window.clearTimeout(timer)
     }
+    let $input = $(e.currentTarget)
+    let value = $input.val().trim()
+    if (value === '') {
+      $('.cancel').removeClass('active')
+      return
+    }
     timer = setTimeout(function () {
       //砸掉闹钟
       timer = null
-      let $input = $(e.currentTarget)
-      let value = $input.val().trim()
-      if (value === '') {
-        return
-      }
       search(value).then((result) => {
         $('#output > ul').empty()
         if (result.length !== 0) {
