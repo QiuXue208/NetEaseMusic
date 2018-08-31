@@ -14,9 +14,33 @@ section > h2::before{content:'';position:absolute;left:0;top:0.5vw;width:0.5vw;h
 .tabContent > li{display:none;position:relative;}
 .tabContent > li.active{display:block;}
 .tabContent > li > p.searchLoadding{position:absolute;left:50%;transform:translateX(-50%);top:50%;}
-.tabContent .container > .info{
+.tabContent .container .info{
     background:transparent url(http://pdrdpai38.bkt.clouddn.com/hot_music_bg_2x.jpg)no-repeat center;
     background-size:cover;
+    height:38.93vw;
+    width:100%;
+    position: relative;
+}
+.tabContent .container .info::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,.2);
+}
+.tabContent .container .info .image{
+    background:url(http://pdrdpai38.bkt.clouddn.com/index_icon_2x.png) no-repeat center;
+    background-size: 44vw 25.3vw;
+    background-position: -24px -30px;
+    height:17.9vw;
+    width:37.86vw;
+    position:relative;
+    top:7.1vw;
+    left:5.4vw;
+    z-index:1;
 }
 .sticky{position:fixed;width:100%;top:0;left:0;z-index:1;}
 .tabContent{margin-top:27.5vw;}
@@ -31,7 +55,7 @@ nav.navBar > ul{display:flex;text-align:center;font-size:4vw;border-bottom:1px s
 nav.navBar > ul > li{flex:1;}
 nav.navBar > ul > li>span{display:inline-block;line-height:10.7vw;position:relative;color:rgb(78, 78, 78);}
 nav.navBar > ul > li.active > span{color:#D85049;}
-nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.1vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
+nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.5vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
 
 section.playLists ul{display:flex;flex-wrap:wrap;justify-content:space-between; margin-top:4vw;}
 section.playLists > ul img{width:100%;}
