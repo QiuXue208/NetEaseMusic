@@ -19,73 +19,21 @@ section > h2::before{content:'';position:absolute;left:0;top:0.5vw;width:0.5vw;h
 .tabContent > li{display:none;position:relative;}
 .tabContent > li.active{display:block;}
 .tabContent > li > p.searchLoadding{position:absolute;left:50%;transform:translateX(-50%);top:50%;}
-.tabContent.container .info{background:transparent url(http://pdrdpai38.bkt.clouddn.com/hot_music_bg_2x.jpg)no-repeat center;background-size:cover;
+.tabContent .container .info{background:transparent url(http://pdrdpai38.bkt.clouddn.com/hot_music_bg_2x.jpg)no-repeat center;background-size:cover;
     height:38.93vw;width:100%;position: relative;}
-.tabContent.container .info::after{content:'';display:block;position: absolute;top:0;
+.tabContent .container .info::after{content:'';display:block;position: absolute;top:0;
     left:0;bottom:0;right:0;background-color:rgba(0,0,0,.2);}
-.tabContent.container .info .image{background:url(http://pdrdpai38.bkt.clouddn.com/index_icon_2x.png) no-repeat center;background-size: 44vw 25.3vw;
+.tabContent .container .info .image{background:url(http://pdrdpai38.bkt.clouddn.com/index_icon_2x.png) no-repeat center;background-size: 44vw 25.3vw;
     background-position: -24px -30px;height:17.9vw;width:37.86vw;position:relative;top:7.1vw;left:5.4vw;z-index:1;}
-.tabContent .inputSong{
-    width:93vw;
-    height:8vw;
-    background:#ebecec;
-    margin:4.1vw 3.5vw; 
-    border-radius: 8vw;
-    position:relative;
-    padding-bottom:3vw;
-}
-.tabContent .inputSong input{
-    width: 100%;
-    height: 8vw;
-    line-height: 4.8vw;
-    background: transparent;
-    font-size: 3.7vw;
-    color: #333;
-    border:0;
-    outline:0;
-    padding:0 8vw;
-    border-radius: 8vw;
-}
-.tabContent .inputSong input:focus{
-    outline:none;
-}
-.tabContent .inputSong .search{
-    position:absolute;
-    left:2.5vw;
-    top:2.3vw;
-    width:3.5vw;
-    height:3.5vw;
-}
-.tabContent .inputSong .cancel{
-    display:none; 
-}
-.tabContent .inputSong .cancel.active{
-    display:block;
-    position:absolute;
-    right:2.5vw;
-    top:2.3vw;
-    width:3.7vw;
-    height:3.7vw;
-}
-.tabContent hr{
-    width:100%;
-    border:.1vw solid #e2e2e2;
-}
-.tabContent .output > ul > li{  
-    border-bottom:.1vw solid #e2e2e2;
-    position:relative;
-    padding:7vw;
-}
-.tabContent .output > ul > li > a{
-    position: absolute;
-    left:0;
-    top:0;
-    right:0;
-    color:#333;
-    height:53px;
-    line-height:53px;
-    padding-left:4vw;
-}
+.tabContent .inputSong{width:93vw;height:8vw;background:#ebecec;margin:4.1vw 3.5vw; border-radius: 8vw;position:relative;padding-bottom:3vw;}
+.tabContent .inputSong input{width: 100%;height: 8vw;line-height: 4.8vw;background: transparent;font-size: 3.7vw;color: #333;border:0;outline:0;padding:0 8vw;border-radius: 8vw;}
+.tabContent .inputSong input:focus{outline:none;}
+.tabContent .inputSong .search{position:absolute;left:2.5vw;top:2.3vw;width:3.5vw;height:3.5vw;}
+.tabContent .inputSong .cancel{ display:none; }
+.tabContent .inputSong .cancel.active{display:block;position:absolute;right:2.5vw;top:2.3vw;width:3.7vw;height:3.7vw;}
+.tabContent hr{width:100%;border:.1vw solid #e2e2e2;}
+.tabContent .output > ul > li{  border-bottom:.1vw solid #e2e2e2;position:relative;padding:7vw;}
+.tabContent .output > ul > li > a{position: absolute;left:0;top:0;right:0;color:#333;height:53px;line-height:53px;padding-left:4vw;}
 
 
 header.topBar{width:100vw;padding:4.5vw 1.5vw;background:#D43C33;display:flex;flex-wrap: nowrap;justify-content:space-between;align-items: center;}
@@ -98,7 +46,7 @@ nav.navBar > ul{display:flex;text-align:center;font-size:4vw;border-bottom:1px s
 nav.navBar > ul > li{flex:1;}
 nav.navBar > ul > li>span{display:inline-block;line-height:10.7vw;position:relative;color:rgb(78, 78, 78);}
 nav.navBar > ul > li.active > span{color:#D85049;}
-nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.5vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
+nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.3vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
 
 section.playLists ul{display:flex;flex-wrap:wrap;justify-content:space-between; margin-top:4vw;}
 section.playLists > ul img{width:100%;}
