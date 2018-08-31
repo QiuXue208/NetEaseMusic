@@ -15,19 +15,23 @@ section > h2::before{content:'';position:absolute;left:0;top:0.5vw;width:0.5vw;h
     background:transparent url(http://pdrdpai38.bkt.clouddn.com/hot_music_bg_2x.jpg)no-repeat center;
     background-size:cover;
 }
-
+.sticky{position:fixed;width:100%;top:0;left:0;z-index:1;}
+.tabContent{margin-top:27.5vw;}
 
 header.topBar{width:100vw;padding:4.5vw 1.5vw;background:#D43C33;display:flex;flex-wrap: nowrap;justify-content:space-between;align-items: center;}
 header .logo svg{width:40vw;height:6.5vw;}
 header .download{margin-right:1.3vw;}
 header .download a{font-size:4vw;border:1px solid #F2C5C2;padding:1.2vw 2.5vw;border-radius:5.3vw;color:white;}
 
+nav.navBar{background:white;}
 nav.navBar > ul{display:flex;text-align:center;font-size:4vw;border-bottom:1px solid #E2E2E2;}
 nav.navBar > ul > li{flex:1;}
 nav.navBar > ul > li>span{display:inline-block;line-height:10.7vw;position:relative;color:rgb(78, 78, 78);}
 nav.navBar > ul > li.active > span{color:#D85049;}
 nav.navBar > ul > li.active > span::before{content:'';position:absolute;bottom:-0.1vw;left:-1.5vw;right:-1.5vw;border-bottom:0.5vw solid#D44037;}
 
+/*解决margin合并*/
+section.playLists::before{content:'';display:table;}
 section.playLists ul{display:flex;flex-wrap:wrap;justify-content:space-between; margin-top:4vw;}
 section.playLists > ul img{width:100%;}
 section.playLists > ul > li{width:calc(33.333333% - 1vw);margin-bottom:5vw;}
