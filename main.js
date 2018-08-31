@@ -96,7 +96,7 @@ $(function () {
             $('#output > ul').append(li)
           }
         } else {
-          $('#output > ul').html('没有结果')
+          $('#output > ul > li').html('没有结果')
         }
       })
     }, 700)

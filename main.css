@@ -71,8 +71,8 @@ section > h2::before{content:'';position:absolute;left:0;top:0.5vw;width:0.5vw;h
     width:100%;
     border:.1vw solid #e2e2e2;
 }
-.tabContent .output > ul >li{
-    height:10vw;
+.tabContent .output > ul > li{
+    padding:4vw;
     border-bottom:.1vw solid #e2e2e2;
 }
 
