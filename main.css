@@ -11,6 +11,12 @@ section > h2::before{content:'';position:absolute;left:0;top:0.5vw;width:0.5vw;h
 .tabContent > li{display:none;position:relative;}
 .tabContent > li.active{display:block;}
 .tabContent > li > p.searchLoadding{position:absolute;left:50%;transform:translateX(-50%);top:50%;}
+.tabContent .container > .info{
+    background:transparent url(http://pdrdpai38.bkt.clouddn.com/hot_music_bg_2x.jpg)no-repeat center;
+    background-size:cover;
+}
+
+
 header.topBar{width:100vw;padding:4.5vw 1.5vw;background:#D43C33;display:flex;flex-wrap: nowrap;justify-content:space-between;align-items: center;}
 header .logo svg{width:40vw;height:6.5vw;}
 header .download{margin-right:1.3vw;}
