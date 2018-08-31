@@ -66,13 +66,13 @@ $(function () {
     })
   }
 
+  $('.cancel').on('click',function(e){
+    $('#searchSong')[0].value = ''
+  })
   let timer = null
   //监听input事件 用户每输入一个字，就发一个请求
   $('#searchSong').on('input', function (e) {
     $('.cancel').addClass('active')
-    $('.cancel').on('click',function(){
-      $('#searchSong').html('')
-    })
     //清空上次设置的闹钟
     if (timer) {
       window.clearTimeout(timer)
@@ -87,16 +87,20 @@ $(function () {
       //砸掉闹钟
       timer = null
       search(value).then((result) => {
+        console.log(result)
         $('#output > ul').empty()
         if (result.length !== 0) {
           for (let i = 0; i < result.length; i++) {
-            let li = `
-            <li>${result[i].name}</li>
+            let $li = `
+             <li> 
+               <a href="./song.html?id=${result[i].id}">${result[i].name}</a>           
+             </li>
             `
-            $('#output > ul').append(li)
+            $('#output > ul').append($li)
           }
         } else {
-          $('#output > ul > li').html('没有结果')
+          let $li = `<li>没有结果</li>`
+          $('#output > ul').append($li)
         }
       })
     }, 700)
