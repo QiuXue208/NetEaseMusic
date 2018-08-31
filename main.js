@@ -57,38 +57,43 @@ $(function () {
   //模拟搜索后台
   function search(keyword) {
     return new Promise((resolve, reject) => {
-      let result
       var database = $.get('./search.json', function (response) {
-        result = response.filter(function (item) {
+        let result = response.filter(function (item) {
           return item.name.indexOf(keyword) >= 0
         })
+        resolve(result)
       })
-     resolve(result)
     })
   }
 
-  let timer = undefined
+  let timer = null
   //监听input事件 用户每输入一个字，就发一个请求
   $('#searchSong').on('input', function (e) {
-    let $input = $(e.currentTarget)
-    //得到input的trim(去掉前后空格)值
-    let value = $input.val().trim()
-    if (value === '') { return }
     //清空上次设置的闹钟
-    if(timer){
+    if (timer) {
       window.clearTimeout(timer)
     }
-    timer = setTimeout(function(){
+    timer = setTimeout(function () {
+      //砸掉闹钟
+      timer = null
+      let $input = $(e.currentTarget)
+      let value = $input.val().trim()
+      if (value === '') {
+        return
+      }
       search(value).then((result) => {
-        //砸掉闹钟
-        console.log(result)
-        timer = undefined
-        if (result.length !== 0 ) {
-          $('#output').text(result.map((s) => s.name).join('-'))
-        }else{
-          $('#output').text('没有结果')
+        $('#output > ul').empty()
+        if (result.length !== 0) {
+          for (let i = 0; i < result.length; i++) {
+            let li = `
+            <li>${result[i].name}</li>
+            `
+            $('#output > ul').append(li)
+          }
+        } else {
+          $('#output > ul').html('没有结果')
         }
       })
-    },1000)
+    }, 700)
   })
 })
