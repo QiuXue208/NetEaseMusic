@@ -1,4 +1,5 @@
 $(function () {
+
   //请求JSON，动态加载最新音乐数据
   $.get('./songs.json', (response) => {
     let items = response
@@ -54,6 +55,7 @@ $(function () {
     }
   })
 
+
   //模拟搜索后台
   function search(keyword) {
     return new Promise((resolve, reject) => {
@@ -66,10 +68,14 @@ $(function () {
     })
   }
 
-  $('.cancel').on('click',function(e){
+
+  $('.cancel').on('click', function (e) {
     $('#searchSong')[0].value = ''
+    $('.cancel').removeClass('active')
+    $('#output').removeClass('active')
   })
   let timer = null
+
   //监听input事件 用户每输入一个字，就发一个请求
   $('#searchSong').on('input', function (e) {
     $('.cancel').addClass('active')
@@ -79,16 +85,12 @@ $(function () {
     }
     let $input = $(e.currentTarget)
     let value = $input.val().trim()
-    if (value === '') {
-      $('.cancel').removeClass('active')
-      return
-    }
     timer = setTimeout(function () {
       //砸掉闹钟
       timer = null
       search(value).then((result) => {
-        console.log(result)
         $('#output > ul').empty()
+        $('#output').addClass('active') 
         if (result.length !== 0) {
           for (let i = 0; i < result.length; i++) {
             let $li = `
@@ -99,7 +101,7 @@ $(function () {
             $('#output > ul').append($li)
           }
         } else {
-          let $li = `<li>没有结果</li>`
+          let $li = `<li>居然没有耶</li>`
           $('#output > ul').append($li)
         }
       })
