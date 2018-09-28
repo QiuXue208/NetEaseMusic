@@ -105,6 +105,6 @@ $(function () {
           $('#output > ul').append($li)
         }
       })
-    }, 700)
+    }, 500)
   })
 })
